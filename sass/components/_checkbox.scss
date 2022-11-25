@@ -1,0 +1,17 @@
+.checkbox {
+    appearance: none;
+}
+.checkbox__icon .unchecked {
+    opacity: 1;
+    transition: 250ms;
+}
+.checkbox:checked + .checkbox__icon .unchecked {
+    opacity: 0;
+}
+.checkbox__icon .checked {
+    opacity: 0;
+    transition: 250ms;
+}
+.checkbox:checked + .checkbox__icon .checked {
+    opacity: 1;
+}

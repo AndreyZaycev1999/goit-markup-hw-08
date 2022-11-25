@@ -1,0 +1,36 @@
+.features {
+    display: flex;
+    justify-content: center;
+    padding-top: 94px;
+}
+.features__page {
+    @extend %container
+}
+.features__list {
+    @extend %list;
+
+    justify-content: space-between;
+}
+.features__item {
+    width: 270px;
+}
+.features__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+.features__title {
+    margin: 0px;
+    margin-bottom: 10px;
+}
+.features__text {
+    margin: 0px;
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    color: var(--second-color);
+}

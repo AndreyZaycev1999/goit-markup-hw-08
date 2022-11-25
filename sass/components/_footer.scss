@@ -1,0 +1,28 @@
+.footer__page {
+    background: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footer__container {
+    @extend %container;
+
+    display: flex;
+    align-items: baseline;
+}
+.footer__address {
+    font-style: normal;
+}
+.footer__icons {
+    margin-left: 70px;
+}
+.footer__title {
+    color: #FFFFFF;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.footer__email {
+    margin-left: 93px;
+}
+.footer__form {
+    display: flex;
+}

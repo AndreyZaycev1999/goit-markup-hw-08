@@ -1,0 +1,41 @@
+.referral {
+    @extend %section;
+}
+.referral__page {
+    @extend %container;
+}
+.referral__title {
+    display: flex;
+    justify-content: center;
+}
+.referral__list {
+    @extend %list;
+
+    gap: 30px;
+}
+.referral__item {
+    height: 294px;
+}
+.referral__wrapper {
+    position: relative;
+}
+.referral__box {
+    position: absolute;
+    transform: translate(-50%, 0%);
+    width: 100%;
+    left: 50%;
+    bottom: 0%;
+    background: rgba(47, 48, 58, 0.8);
+}
+.referral__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+}

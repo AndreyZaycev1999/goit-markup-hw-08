@@ -1,0 +1,35 @@
+.social__list {
+    @extend %list;
+
+    justify-content: center;
+    gap: 10px;
+}
+.social__link {
+    @extend %link;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    transition-duration: 250ms;
+
+    &:hover,
+    &:focus {
+        color: #FFFFFF;
+        background-color: var(--brand-color);
+    }
+}
+.social__link--white {
+    color: #AFB1B8;;
+    background-color: #fff;
+}
+.social__link--dark {
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.socials__icon {
+    fill: currentColor;
+}

@@ -1,0 +1,21 @@
+%section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+%container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+%list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+%link {
+    text-decoration: none;
+}

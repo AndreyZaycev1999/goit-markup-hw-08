@@ -1,0 +1,43 @@
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+.header__page {
+    @extend %container;
+    
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.header__group {
+    @extend %list;
+
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+    margin: 0px;
+}
+.header__item {
+    &:not(:last-child) {
+        margin-right: 50px;
+    }
+}
+    
+.header__link {
+    @extend %link;
+
+    color: var(--second-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    transition-duration: 250ms;
+
+    &:hover,
+    &:focus {
+        color: var(--brand-color);
+    }
+}
+.header__icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
