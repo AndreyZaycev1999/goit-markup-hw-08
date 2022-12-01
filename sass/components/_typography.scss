@@ -1,12 +1,17 @@
 .title {
-text-align: center;
-
+    text-align: center;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.1;
+    font-size: 28px;
+    line-height: 1.18;
     letter-spacing: 0.03em;
     margin: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 36px;
+        line-height: 1.1;
+        margin-bottom: 50px;
+    }
 }
 .uppercase__text {
     font-weight: 700;

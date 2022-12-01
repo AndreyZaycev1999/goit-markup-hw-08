@@ -29,16 +29,14 @@
 }
 .team__img {
     width: 450px;
-    height: 460px;
+    height: auto;
 
     @media screen and (min-width: $tablet) {
         width: 354px;
-        height: 374px;
     }
 
     @media screen and (min-width: $desktop) {
-        width: 270px;
-        height: 260px;  
+        width: 270px; 
     }
 
 }

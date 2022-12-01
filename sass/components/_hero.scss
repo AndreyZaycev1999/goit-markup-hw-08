@@ -6,6 +6,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding-top: 118px;
     
     // mobile screen
     background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero/img_s@1x.jpg);
@@ -27,6 +28,7 @@
     @media screen and (min-width: $desktop) {
         height: 600px;
         min-width: 1200px;
+        padding-top: 200px;
 
         background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero/img_l@1x.jpg);
         @media screen and (min-device-pixel-ratio: 2),
@@ -44,12 +46,10 @@
     line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
-    padding-top: 118px;
+    
     margin: 0 auto 30px auto;
 
     @media screen and (min-width: $desktop) {
-        padding-top: 200px;
         font-size: 44px;
         line-height: 1.36;
     }

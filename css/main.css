@@ -9,6 +9,12 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .portfolio, .clients, .team, .features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .portfolio__page, .footer__container, .clients__container, .team__container, .referral__page, .features__page, .header__page {
   margin-left: auto;
@@ -71,11 +77,18 @@ img {
 .title {
   text-align: center;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   margin: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+    line-height: 1.1;
+    margin-bottom: 50px;
+  }
 }
 
 .uppercase__text {
@@ -229,8 +242,8 @@ img {
 .header__link {
   color: var(--second-color);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.28;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
@@ -238,10 +251,37 @@ img {
 .header__link:hover, .header__link:focus {
   color: var(--brand-color);
 }
+@media screen and (min-width: 1200px) {
+  .header__link {
+    font-size: 14px;
+    line-height: 1.28;
+  }
+}
 
-.header__icon {
+.header__icon--email {
+  width: 14px;
+  height: 10px;
   fill: currentColor;
   margin-right: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .header__icon--email {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.header__icon--tel {
+  width: 10px;
+  height: 14px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .header__icon--tel {
+    width: 10px;
+    height: 16px;
+  }
 }
 
 .nav {
@@ -358,6 +398,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding-top: 118px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/img_s@1x.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img_s@1x.jpg);
 }
@@ -384,6 +425,7 @@ img {
   .hero {
     height: 600px;
     min-width: 1200px;
+    padding-top: 200px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/img_l@1x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img_l@1x.jpg);
   }
@@ -403,12 +445,10 @@ img {
   line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding-top: 118px;
   margin: 0 auto 30px auto;
 }
 @media screen and (min-width: 1200px) {
   .hero__text {
-    padding-top: 200px;
     font-size: 44px;
     line-height: 1.36;
   }
@@ -577,18 +617,16 @@ img {
 
 .team__img {
   width: 450px;
-  height: 460px;
+  height: auto;
 }
 @media screen and (min-width: 768px) {
   .team__img {
     width: 354px;
-    height: 374px;
   }
 }
 @media screen and (min-width: 1200px) {
   .team__img {
     width: 270px;
-    height: 260px;
   }
 }
 

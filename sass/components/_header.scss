@@ -38,8 +38,8 @@
 
     color: var(--second-color);
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.28;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
     transition-duration: 250ms;
 
@@ -47,8 +47,31 @@
     &:focus {
         color: var(--brand-color);
     }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 14px;
+        line-height: 1.28;
+    }
 }
-.header__icon {
+.header__icon--email {
+    width: 14px;
+    height: 10px;
     fill: currentColor;
     margin-right: 10px;
+
+    @media screen and (min-width: $desktop) {
+        width: 16px;
+        height: 12px;
+    }
+}
+.header__icon--tel {
+    width: 10px;
+    height: 14px;
+    fill: currentColor;
+    margin-right: 10px;
+
+    @media screen and (min-width: $desktop) {
+        width: 10px;
+        height: 16px;
+    }
 }
