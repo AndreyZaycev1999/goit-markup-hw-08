@@ -6,8 +6,6 @@
 @import './base/base';
 
 // components styles
-@import './components/section';
-@import './components/container';
 @import './components/typography';
 @import './components/button';
 @import './components/header';
@@ -15,7 +13,7 @@
 @import './components/logo';
 @import './components/hero';
 @import './components/features';
-@import './components/referral';
+@import './components/referral'; 
 @import './components/team';
 @import './components/socials';
 @import './components/clients';
@@ -28,3 +26,4 @@
 @import './components/checkbox';
 @import './components/portfolio';
 @import './components/overlay';
+@import './components/menu';

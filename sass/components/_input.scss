@@ -10,7 +10,7 @@
     }
 }
 .input--footer {
-    width: 358px;
+    width: 100%;
     height: 50px;
     transition: 250ms;
 
@@ -24,10 +24,19 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     padding-left: 16px;
+    margin-bottom: 20px;
 
     &:hover,
     &:focus {
         border: 1px solid var(--brand-color);
+    }
+
+    @media screen and (min-width: $mobile) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 358px;
     }
 }
 .input--modal {

@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,52 +15,67 @@
         <!-- Header section -->
         <header class="header">
             <div class="header__page">
-                <nav class="nav">
-                    <a class="logo logo--nav" href="./index.html">
-                        Web<span class="logo__span logo__span--black">Studio</span>
-                    </a>
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a class="nav__link nav__link--current" href="./index.html">
-                                Студія
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="./portfolio.html">
-                                Портфоліо
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="">
-                                Контакти
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <ul class="header__group">
-                    <li class="header__item">
-                        <a class="header__link" href="">
-                            <svg 
-                                class="header__icon"
-                                width="16" 
-                                height="12">
-                                <use href="./images/icons.svg#email"></use>
-                            </svg>
-                            info@devstudio.com
-                        </a>
-                    </li>
-                    <li class="header__item">
-                        <a class="header__link" href="">
-                            <svg 
-                                class="header__icon"
-                                width="10" 
-                                height="16">
-                                <use href="./images/icons.svg#smartphone"></use>
-                            </svg>
-                            +38 096 111 11 11
-                        </a>
-                    </li>
-                </ul> 
+                <a class="logo logo--nav" href="./index.html">
+                    Web<span class="logo__span logo__span--black">Studio</span>
+                </a>
+                <div class="menu__header container">
+                    <button
+                      class="menu-toggle js-open-menu"
+                      aria-expanded="false"
+                      aria-controls="mobile-menu"
+                    >
+                        <svg
+                            width="40" 
+                            height="40">
+                            <use href="./images/icons.svg#menu"></use>
+                        </svg>
+                    </button>
+                    <div class="menu">
+                        <nav class="nav">
+                            <ul class="nav__list">
+                                <li class="nav__item">
+                                    <a class="nav__link nav__link--current" href="./index.html">
+                                        Студія
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="./portfolio.html">
+                                        Портфоліо
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="">
+                                        Контакти
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <ul class="header__group">
+                            <li class="header__item">
+                                <a class="header__link" href="">
+                                    <svg 
+                                        class="header__icon"
+                                        width="16" 
+                                        height="12">
+                                        <use href="./images/icons.svg#email"></use>
+                                    </svg>
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__link" href="">
+                                    <svg 
+                                        class="header__icon"
+                                        width="10" 
+                                        height="16">
+                                        <use href="./images/icons.svg#smartphone"></use>
+                                    </svg>
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
             </div>
         </header>
 
@@ -127,12 +142,15 @@
         <!-- Referral section -->
         <section class="referral">
             <div class="referral__page">
-                <h2 class="referral__title title">Чим ми займаємося</h2>
+                <h2 class="title">Чим ми займаємося</h2>
                 <ul class="referral__list">
                     <li class="referral__item">
                         <div class="referral__wrapper">
-                            <img 
-                            src="./images/close-up-image-programer-working-his-desk-office_1098-18707.jpg" alt="Десктопні додатки" width="370" height="294">
+                            <img class="referral__img"
+                            srcset="./images/Referral/img-1_@1x.jpg 1x, ./images/Referral/img-1_@2x.jpg 2x" 
+                            src="./images/Referral/referral-img-1.jpg"
+                            alt="Десктопні додатки" width="370" height="294"
+                            >
                             <div class="referral__box">
                                 <p class="referral__text">Десктопні додатки</p>
                             </div>
@@ -140,8 +158,11 @@
                     </li>
                     <li class="referral__item">
                         <div class="referral__wrapper">
-                            <img 
-                            src="./images/web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones_8119-2713.jpg" alt="Мобільні додатки" width="370" height="294">
+                            <img class="referral__img"
+                            srcset="./images/Referral/img-2_@1x.jpg 1x, ./images/Referral/img-2_@2x.jpg 2x" 
+                            src=".images/Referral/referral-img-2"
+                            alt="Мобільні додатки" width="370" height="294"
+                            >
                             <div class="referral__box">
                                 <p class="referral__text">Мобільні додатки</p>
                             </div>
@@ -149,8 +170,11 @@
                     </li>
                     <li class="referral__item">
                         <div class="referral__wrapper">
-                            <img 
-                            src="./images/young-female-creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1186.jpg" alt="Дизайнерські рішення" width="370" height="294">
+                            <img class="referral__img"
+                            srcset="./images/Referral/img-3_@1x.jpg 1x, ./images/Referral/img-3_@2x.jpg 2x" 
+                            src=".images/Referral/referral-img-3.jpg"
+                            alt="Дизайнерські рішення" width="370" height="294"
+                            >
                             <div class="referral__box">
                                 <p class="referral__text">Дизайнерські рішення</p>
                             </div>
@@ -164,9 +188,20 @@
         <section class="team">
             <div class="team__container">
                 <h2 class="title">Наша команда</h2>
-                <ul class="list">
+                <ul class="team__list">
                     <li class="team__item">
-                        <img src="./images/Igor-Demyanenko.jpg" alt="Ігор Дем'яненко" width="270" height="260">                 
+                        <img class="team__img" 
+                        srcset="
+                        ./images/team/img-1_l@1x.jpg 270w,
+                        ./images/team/img-1_m@1x.jpg 354w,
+                        ./images/team/img-1_s@1x.jpg 450w,
+                        ./images/team/img-1_l@2x.jpg 540w,
+                        ./images/team/img-1_m@2x.jpg 708w,
+                        ./images/team/img-1_s@2x.jpg 900w,
+                        "
+                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        src="./images/team/Igor-Demyanenko.jpg" 
+                        alt="Ігор Дем'яненко">                 
                         <div class="team__information">
                             <h3 class="team__name">Ігор Дем'яненко</h3>
                             <p class="team__profession">Product Designer</p>
@@ -239,7 +274,18 @@
                         </div>
                     </li>
                     <li class="team__item"> 
-                        <img src="./images/Olga-Repina.jpg" alt="Ольга Рєпіна" width="270" height="260">                        
+                        <img class="team__img" 
+                        srcset="
+                        ./images/team/img-2_l@1x.jpg 270w,
+                        ./images/team/img-2_m@1x.jpg 354w,
+                        ./images/team/img-2_s@1x.jpg 450w,
+                        ./images/team/img-2_l@2x.jpg 540w,
+                        ./images/team/img-2_m@2x.jpg 708w,
+                        ./images/team/img-2_s@2x.jpg 900w,
+                        "
+                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        src="./images/team/Olga-Repina.jpg" 
+                        alt="Ольга Рєпіна">                        
                         <div class="team__information">
                             <h3 class="team__name">Ольга Рєпіна</h3>
                             <p class="team__profession">Frontend Developer</p>
@@ -312,7 +358,18 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="./images/Mikola-Tarasov.jpg" alt="Микола Тарасов" width="270" height="260">
+                        <img class="team__img" 
+                        srcset="
+                        ./images/team/img-3_l@1x.jpg 270w,
+                        ./images/team/img-3_m@1x.jpg 354w,
+                        ./images/team/img-3_s@1x.jpg 450w,
+                        ./images/team/img-3_l@2x.jpg 540w,
+                        ./images/team/img-3_m@2x.jpg 708w,
+                        ./images/team/img-3_s@2x.jpg 900w,
+                        "
+                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        src="./images/team/Mikola-Tarasov.jpg" 
+                        alt="Микола Тарасов">
                         <div class="team__information">
                             <h3 class="team__name">Микола Тарасов</h3>
                             <p class="team__profession">Marketing</p>
@@ -385,7 +442,18 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="./images/Michaylo-Ermakov.jpg" alt="Михайло Єрмаков" width="270" height="260">                   
+                        <img class="team__img" 
+                        srcset="
+                        ./images/team/img-4_l@1x.jpg 270w,
+                        ./images/team/img-4_m@1x.jpg 354w,
+                        ./images/team/img-4_s@1x.jpg 450w,
+                        ./images/team/img-4_l@2x.jpg 540w,
+                        ./images/team/img-4_m@2x.jpg 708w,
+                        ./images/team/img-4_s@2x.jpg 900w,
+                        "
+                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        src="./images/team/Michaylo-Ermakov.jpg" 
+                        alt="Михайло Єрмаков">                   
                         <div class="team__information">
                             <h3 class="team__name">Михайло Єрмаков</h3>
                             <p class="team__profession">UI Designer</p>
@@ -466,7 +534,7 @@
             <div class="clients__container">
                 <h3 class="title">Постійні клієнти</h3>
                 <ul class="clients__list">
-                    <li>
+                    <li class="clients__item">
                         <a class="clients__link" href="">
                             <svg 
                                 class="clients__logo"
@@ -476,7 +544,7 @@
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="clients__item">
                         <a class="clients__link" href="">
                             <svg 
                                 class="clients__logo"
@@ -486,7 +554,7 @@
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="clients__item">
                         <a class="clients__link" href="">
                             <svg 
                                 class="clients__logo"
@@ -496,7 +564,7 @@
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="clients__item">
                         <a class="clients__link" href="">
                             <svg 
                                 class="clients__logo"
@@ -506,7 +574,7 @@
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="clients__item">
                         <a class="clients__link" href="">
                             <svg 
                                 class="clients__logo"
@@ -516,7 +584,7 @@
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="clients__item">
                         <a class="clients__link" href="">
                             <svg 
                                 class="clients__logo"
@@ -533,7 +601,7 @@
         <!-- Footer section -->
         <footer class="footer__page">
             <div class="footer__container">
-                <div>
+                <div class="footer__group">
                     <h2 hidden>Футер</h2>
                     <address class="footer__address">
                         <a class="logo" href="./index.html">
@@ -620,7 +688,7 @@
                 <div class="footer__email">
                     <h3 class="footer__title uppercase__text">Підпишіться на розсилку</h3>
                     <form class="footer__form" name="footer_form" autocomplete="on">
-                        <label>
+                        <label class="footer__label">
                             <input placeholder="E-mail" class="input--footer" type="email" required>
                         </label>
                         <button class="button button--footer" type="submit">
@@ -638,7 +706,7 @@
         </footer>
 
         <!-- Backdrop section -->
-    <div class="backdrop is-hidden" data-modal>
+        <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="close__button" type="button" data-modal-close>
                 <svg width="18" height="18">
@@ -690,8 +758,72 @@
                 </div>
             </form>
         </div>
-    </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+                <svg
+                    width="40" 
+                    height="40">
+                    <use href="./images/icons.svg#cross"></use>
+                </svg>
+            </button>
+      
+            <div class="mobile-menu">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link nav__link--current" href="./index.html">
+                                Студія
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="./portfolio.html">
+                                Портфоліо
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="">
+                                Контакти
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div>    
+                    <ul class="header__group">
+                        <li class="header__item">
+                            <a class="menu-number" href="">+38 096 111 11 11</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="menu-email" href="">info@devstudio.com</a>
+                        </li>
+                    </ul> 
+                    <ul class="menu-socials">
+                        <li>
+                            <a class="menu-link" href="https://www.instagram.com">Instagram</a>
+                        </li>
+                        <li>
+                            <a class="menu-link" href="https://twitter.com">Twitter</a>
+                        </li>
+                        <li>
+                            <a class="menu-link" href="https://www.facebook.com/">Facebook</a>
+                        </li>
+                        <li>
+                            <a class="menu-link" href="https://ua.linkedin.com">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
         <script src="./js/modal.js"></script>
+        <script
+            defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"
+        ></script>
+        <script defer src="js/mobile-menu.js"></script>
     </body>
 </html>

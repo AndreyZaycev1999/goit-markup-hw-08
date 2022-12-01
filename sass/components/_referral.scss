@@ -1,16 +1,18 @@
 .referral {
-    @extend %section;
+    display: none;
+    padding-bottom: 94px;
+
+    @media screen and (min-width: $desktop) {
+        display: block;
+    }
 }
 .referral__page {
     @extend %container;
 }
-.referral__title {
-    display: flex;
-    justify-content: center;
-}
 .referral__list {
     @extend %list;
 
+    display: flex;
     gap: 30px;
 }
 .referral__item {
@@ -18,6 +20,9 @@
 }
 .referral__wrapper {
     position: relative;
+}
+.referral__img {
+    display: block;
 }
 .referral__box {
     position: absolute;

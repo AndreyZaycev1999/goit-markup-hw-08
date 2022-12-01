@@ -3,32 +3,43 @@
 }
 .header__page {
     @extend %container;
+
+    position: relative;
     
-    height: 80px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
+
+    @media screen and (min-width: $tablet) {
+        height: 80px;
+    }
 }
 .header__group {
     @extend %list;
 
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px 30px;
     padding-left: 0px;
-    margin: 0px;
-}
-.header__item {
-    &:not(:last-child) {
-        margin-right: 50px;
+    margin: 0px 0px 64px 0px;
+
+    @media screen and (min-width: $tablet) {
+        margin: 0;
     }
-}
-    
+    @media screen and (min-width: $desktop) {
+        flex-direction: row;
+        align-items: center;
+    }
+} 
 .header__link {
     @extend %link;
 
     color: var(--second-color);
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.1;
+    line-height: 1.28;
     letter-spacing: 0.02em;
     transition-duration: 250ms;
 

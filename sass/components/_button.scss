@@ -21,15 +21,26 @@
     }
 }
 .button--hero {
-    padding-left: 32px;
-    padding-right: 32px;
+    display: block;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin: 0 auto;
+
+    @media screen and (min-width: $desktop) {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
 }
 .button--footer {
     display: flex;
     align-items: center;
+    height: 50px;
     padding-left: 28px;
     padding-right: 28px;
-    margin-left: 12px;
+
+    @media screen and (min-width: $desktop) {
+        margin-left: 12px;
+    }
 }
 .button--icon {
     fill: #fff;
@@ -49,7 +60,7 @@
     line-height: 1.7;
     letter-spacing: 0.03em;   
     color: var(--first-color);
-    padding: 6px 22px 6px 22px;
+    padding: 6px 25px;
     background: #F5F4FA;
     border: 0;
     border-radius: 4px;
